@@ -37,6 +37,12 @@
             tapping-term-ms = <200>;
             bindings = <&to 0>, <&to 1>;
         };
+
+        udrscr: underscore {
+            "zmk,behavior-mod-morph";
+            bindings = <&kb UNDERSCORE>, <&kb GRAVE ACCENT>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+        };
     };
 
     keymap {
