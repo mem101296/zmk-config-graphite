@@ -62,6 +62,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        comma_question: comma_question {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA_QUESTION";
+            bindings = <&kp COMMA>, <&kp QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -77,9 +86,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &udrscr       &kp F  &kp O       &kp U        &kp J      &none
-&kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E        &kp I      &none
-&kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &quote_dash  &grtrSlsh  &none
+&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &udrscr       &kp F  &kp O       &kp U        &kp J      &kp SEMICOLON
+&kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E        &kp I      &comma_question
+&kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &quote_dash  &grtrSlsh  &kp BACKSPACE
                                 &kp LEFT_META  &td1   &kp SPACE    &kp KP_ENTER  &td2   &td0
             >;
         };
