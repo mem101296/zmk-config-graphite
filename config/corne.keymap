@@ -40,9 +40,27 @@
 
         udrscr: underscore {
             compatible = "zmk,behavior-mod-morph";
-            bindings = <&kp UNDERSCORE>, <&kp GRAVE ACCENT>;
+            bindings = <&kp GRAVE ACCENT>, <&kp UNDERSCORE>;
 
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        grtrSlsh: grtrSlsh {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRTRSLSH";
+            bindings = <&kp SLASH>, <&kp LESS_THAN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        quote_dash: quote_dash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_DASH";
+            bindings = <&kp MINUS>, <&kp DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -59,9 +77,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &udrscr       &kp F  &kp O       &kp U           &kp J          &none
-&kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E           &kp I          &none
-&kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &kp UNDERSCORE  &kp LESS_THAN  &none
+&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &udrscr       &kp F  &kp O       &kp U        &kp J      &none
+&kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E        &kp I      &none
+&kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &quote_dash  &grtrSlsh  &none
                                 &kp LEFT_META  &td1   &kp SPACE    &kp KP_ENTER  &td2   &td0
             >;
         };
