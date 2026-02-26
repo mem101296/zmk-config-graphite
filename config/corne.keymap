@@ -39,7 +39,7 @@
         };
 
         udrscr: underscore {
-            "zmk,behavior-mod-morph";
+            compatible = "zmk,behavior-mod-morph";
             bindings = <&kb UNDERSCORE>, <&kb GRAVE ACCENT>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
