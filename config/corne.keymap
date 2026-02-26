@@ -52,9 +52,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp F          &kp P  &kp B        &kp J         &kp L  &kp U      &kp Y    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_SHIFT    &kp A  &kp R  &kp S          &kp T  &kp G        &kp M         &kp N  &kp E      &kp I    &kp O          &kp LEFT_BRACKET
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C          &kp D  &kp V        &kp K         &kp H  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_BRACKET
+&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &kp MINUS     &kp F  &kp O       &kp U           &kp J          &none
+&kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E           &kp I          &none
+&kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &kp UNDERSCORE  &kp LESS_THAN  &none
                                 &kp LEFT_META  &td1   &kp SPACE    &kp KP_ENTER  &td2   &td0
             >;
         };
