@@ -41,6 +41,7 @@
         udrscr: underscore {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&kp UNDERSCORE>, <&kp GRAVE ACCENT>;
+
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
@@ -58,7 +59,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &kp undrscr     &kp F  &kp O       &kp U           &kp J          &none
+&kp ESC           &kp B  &kp L  &kp D          &kp W  &kp Z        &udrscr       &kp F  &kp O       &kp U           &kp J          &none
 &kp LEFT_SHIFT    &kp N  &kp R  &kp T          &kp S  &kp G        &kp Y         &kp H  &kp A       &kp E           &kp I          &none
 &kp LEFT_CONTROL  &kp Q  &kp X  &kp M          &kp C  &kp V        &kp K         &kp P  &kp PERIOD  &kp UNDERSCORE  &kp LESS_THAN  &none
                                 &kp LEFT_META  &td1   &kp SPACE    &kp KP_ENTER  &td2   &td0
